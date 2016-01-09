@@ -347,41 +347,19 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
 	page += u'	<title>'+title+u' - Guild War 2 Crafting Guide</title>\n'
 	page += u'	<meta name="description" content="Guild Wars 2 always current crafting guide for '+filename.split('.')[0].replace("_"," ").title()+u'">\n'
 	page += u'	<meta http-equiv="content-type" content="text/html;charset=UTF-8">\n'
-	page += u'	<link href="/css/layout.css" rel="stylesheet" type="text/css" />'
+	page += u'	<link href="/crafting/css/layout.css" rel="stylesheet" type="text/css" />'
 	page += u'	<link rel="icon" type="image/png" href="/fi.gif">'
 	page += u'	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>\n'
 	page += u'	<script>(window.jQuery || document.write(\'<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"><\/script>\'));</script>\n'
-	page += u'	<script src="/js/menu.js" type="text/javascript"></script>\n'
+	page += u'	<script src="/crafting/js/menu.js" type="text/javascript"></script>\n'
 	page += u'</head>\n'
 	page += u'<body>\n%s\n'%(localText.header%(filename,filename,filename,filename,filename))
-	page += u"""<script> 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-38972433-1', 'auto');
-  ga('send', 'pageview');
-
-</script>"""
 	page += u'<section class=\"main\">'
 	page += u'<div style="width: 100%; border: 2px #fffaaa solid; border-left: 0px; border-right: 0px; background: #fffddd; height: 24px;">\n'
 	page += u'<span class=\"warning\"></span><span style="position: relative; top: 4px;"><span style="color: red">%s</span>	%s: %s</span>\n'%(localText.warning1,localText.warning2,mytime)
 	page += u'</div><br />\n'
 	page += u"<strong>%s</strong><br />\n"%(localText.region)
-	# adword
-	page += u'<div style="float:right;position:absolute;right:-320px;"> \
-			\n<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script> \
-			\n<!-- large sidebar --> \
-			\n<ins class=\"adsbygoogle\" \
-			\n     style=\"display:inline-block;width:300px;height:600px\" \
-			\n     data-ad-client=\"ca-pub-6865907345688710\" \
-			\n     data-ad-slot=\"9285292589\"></ins> \
-			\n<script> \
-			\n(adsbygoogle = window.adsbygoogle || []).push({}); \
-			\n</script> \
-			\n</div>\n'
-	page += localText.moreInfo%(u"<img src=\"/img/arrow.png\" alt=ARROW>")
+	page += localText.moreInfo%(u"<img src=\"/crafting/img/arrow.png\" alt=ARROW>")
 	# Page Title Part 1
 	page += u'<h1>'+title+u'</h1>'
 	page += u'<dl>\n'
@@ -480,20 +458,7 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
 						page += u"<div class=\"s"+str(t)+u"\">"+localText.make+u":%3i <span class=\"%s\">%s</span></div>\n"%(make[lvl][item],cList[item][u'rarity'],cListName[item])
 
 
-		if tier == 150:
-			# adword 2
-			page += u'<div style="float:right;position:absolute;right:-320px;"> \
-				\n<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script> \
-				\n<!-- large side ad 2 --> \
-				\n<ins class=\"adsbygoogle\" \
-				\n     style=\"display:inline-block;width:300px;height:600px\" \
-				\n     data-ad-client=\"ca-pub-6865907345688710\" \
-				\n     data-ad-slot=\"4410765382\"></ins> \
-				\n<script> \
-				\n(adsbygoogle = window.adsbygoogle || []).push({}); \
-				\n</script> \
-				\n</div>\n'
-
+# 		if tier == 150:
 		if tierbuy and tier in [0,75,150,225,300]:
 			tt = 0
 			tc = tier+75
@@ -608,18 +573,7 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
 	page += u'<br />\n<h3>%s:%i</h3>\n'%(localText.level,tier+25)
 	t = (t+1)%2
 	page += u"<div class=\"s"+str(t)+u"\">%s</div>\n"%localText.finish
-	# adword
-	page += u'<br /><div style="display:block;text-align:Right;"> \
-			\n<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script> \
-			\n<!-- Tail ad --> \
-			\n<ins class=\"adsbygoogle\" \
-			\n     style=\"display:inline-block;width:336px;height:280px\" \
-			\n     data-ad-client=\"ca-pub-6865907345688710\" \
-			\n     data-ad-slot=\"9889445788\"></ins> \
-			\n<script> \
-			\n(adsbygoogle = window.adsbygoogle || []).push({}); \
-			\n</script> \
-			\n</div>\n'
+
 	page += u'</section>\n'
 	page += u'%s\n<script type="text/javascript">\n'%localText.cright
 	for item in buttonList:
@@ -648,38 +602,18 @@ def maketotals(totals, mytime, localText):
 	<meta name="description" content="Guild Wars 2 always current crafting guide price totals">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
-	<link href="/css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="/crafting/css/layout.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" type="image/png" href="/fi.gif" />
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-	<script src="/js/menu.js" type="text/javascript"></script>
+	<script src="/crafting/js/menu.js" type="text/javascript"></script>
 </head>
 <body>'''
-	page += u"""<script> 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-38972433-1', 'auto');
-  ga('send', 'pageview');
-
-</script>"""
 	page += localText.header%('total.html',u'total.html',u'total.html',u'total.html',u'total.html')
 	page += u"<section class=\"main\">\n<strong>%s</strong><br />\n"%(localText.region)
 	page += u"<h5 style=\"text-align:center;\">"+localText.updated+u": " + mytime + u"</h5>"
-	# adword
-	page += u'<div style="float:right;position:absolute;right:-320px;"> \
-			\n<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script> \
-			\n<!-- large sidebar --> \
-			\n<ins class=\"adsbygoogle\" \
-			\n     style=\"display:inline-block;width:300px;height:600px\" \
-			\n     data-ad-client=\"ca-pub-6865907345688710\" \
-			\n     data-ad-slot=\"9285292589\"></ins> \
-			\n<script> \
-			\n(adsbygoogle = window.adsbygoogle || []).push({}); \
-			\n</script> \
-			\n</div>\n'
+	
 	page += localText.note
 	page += u'	<table>'
 	page += u'<tr><th>'+localText.craft+u'</th><th>'+localText.nGuides+u'</th><th>'+localText.fGuides+u'</th><th>1-200</th></tr>\n'
