@@ -161,7 +161,7 @@ thanks   = u"Quiero dar las gracias a la gente que creó guías anteriores a est
 
 # index strings
 fThings = u"4 cosas que debes saber"
-t1      = u"Haz clic en <img src=\"/img/arrow.png\" alt=\"ARROW\"> para ver recetas y precios de venta"
+t1      = u"Haz clic en <img src=\"img/arrow.png\" alt=\"ARROW\"> para ver recetas y precios de venta"
 t2      = u"Usa <input type=\"checkbox\"/> para marcar los ingredientes que ya tienes"
 t3      = u"Cada rango tiene su propia lista de compra (excepto cocina)"
 t4      = u"Si el menu de navegación no funciona, usa <a href=\"/es/nav.html\"> esta página</a>"
@@ -204,75 +204,75 @@ path = "es/"
 # don't change this
 header = u"""<nav>
     <ul>
-        <li><a href="/"""+path+u"""">"""+home+u"""</a></li>
+        <li><a href="/crafting/"""+path+u"""">"""+home+u"""</a></li>
         <li><a href="#">"""+nGuides+u"""</a>
         <ul>
             <li><a href="#">"""+cooking+u"""</a>
             <ul>
-                <li><a href="/"""+path+u"""cooking.html">"""+nHearts+u"""</a></li>
-                <li><a href="/"""+path+u"""cooking_karma_light.html">"""+tHearts+u"""</a></li>
-                <li><a href="/"""+path+u"""cooking_karma.html">"""+aHearts+u"""</a></li>
+                <li><a href="/crafting/"""+path+u"""cooking.html">"""+nHearts+u"""</a></li>
+                <li><a href="/crafting/"""+path+u"""cooking_karma_light.html">"""+tHearts+u"""</a></li>
+                <li><a href="/crafting/"""+path+u"""cooking_karma.html">"""+aHearts+u"""</a></li>
             </ul>
             </li>
-            <li><a href="/"""+path+u"""jewelcraft.html">"""+jc+u"""</a></li>
-            <li><a href="/"""+path+u"""artificing.html">"""+art+u"""</a></li>
-            <li><a href="/"""+path+u"""huntsman.html">"""+hunt+u"""</a></li>
-            <li><a href="/"""+path+u"""weaponcraft.html">"""+wc+u"""</a></li>
-            <li><a href="/"""+path+u"""armorcraft.html">"""+ac+u"""</a></li>
-            <li><a href="/"""+path+u"""leatherworking.html">"""+lw+u"""</a></li>
-            <li><a href="/"""+path+u"""tailor.html">"""+tailor+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""jewelcraft.html">"""+jc+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""artificing.html">"""+art+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""huntsman.html">"""+hunt+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""weaponcraft.html">"""+wc+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""armorcraft.html">"""+ac+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""leatherworking.html">"""+lw+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""tailor.html">"""+tailor+u"""</a></li>
         </ul>
         </li>
         <li><a href="#">"""+fGuides+u"""</a>
         <ul>
             <li><a href="#">"""+cooking+u"""</a>
             <ul>
-                <li><a href="/"""+path+u"""cooking_fast.html">"""+nHearts+u"""</a></li>
-                <li><a href="/"""+path+u"""cooking_karma_fast_light.html">"""+tHearts+u"""</a></li>
-                <li><a href="/"""+path+u"""cooking_karma_fast.html">"""+aHearts+u"""</a></li>
+                <li><a href="/crafting/"""+path+u"""cooking_fast.html">"""+nHearts+u"""</a></li>
+                <li><a href="/crafting/"""+path+u"""cooking_karma_fast_light.html">"""+tHearts+u"""</a></li>
+                <li><a href="/crafting/"""+path+u"""cooking_karma_fast.html">"""+aHearts+u"""</a></li>
             </ul>
             </li>
-            <li><a href="/"""+path+u"""jewelcraft_fast.html">"""+jc+u"""</a></li>
-            <li><a href="/"""+path+u"""artificing_fast.html">"""+art+u"""</a></li>
-            <li><a href="/"""+path+u"""huntsman_fast.html">"""+hunt+u"""</a></li>
-            <li><a href="/"""+path+u"""weaponcraft_fast.html">"""+wc+u"""</a></li>
-            <li><a href="/"""+path+u"""armorcraft_fast.html">"""+ac+u"""</a></li>
-            <li><a href="/"""+path+u"""leatherworking_fast.html">"""+lw+u"""</a></li>
-            <li><a href="/"""+path+u"""tailor_fast.html">"""+tailor+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""jewelcraft_fast.html">"""+jc+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""artificing_fast.html">"""+art+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""huntsman_fast.html">"""+hunt+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""weaponcraft_fast.html">"""+wc+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""armorcraft_fast.html">"""+ac+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""leatherworking_fast.html">"""+lw+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""tailor_fast.html">"""+tailor+u"""</a></li>
         </ul>
         </li>
         <li><a href="#">400-500</a>
         <ul>
-            <li><a href="/"""+path+u"""artificing_400.html">"""+art+u"""</a></li>
-            <li><a href="/"""+path+u"""huntsman_400.html">"""+hunt+u"""</a></li>
-            <li><a href="/"""+path+u"""weaponcraft_400.html">"""+wc+u"""</a></li>
-            <li><a href="/"""+path+u"""armorcraft_400.html">"""+ac+u"""</a></li>
-            <li><a href="/"""+path+u"""leatherworking_400.html">"""+lw+u"""</a></li>
-            <li><a href="/"""+path+u"""tailor_400.html">"""+tailor+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""artificing_400.html">"""+art+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""huntsman_400.html">"""+hunt+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""weaponcraft_400.html">"""+wc+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""armorcraft_400.html">"""+ac+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""leatherworking_400.html">"""+lw+u"""</a></li>
+            <li><a href="/crafting/"""+path+u"""tailor_400.html">"""+tailor+u"""</a></li>
         </ul>
         </li>
         <li><a href="#">"""+special+u"""</a>
         <ul>
             <li><a href="#">"""+cooking+u""" 1-200</a>
             <ul>
-                <li><a href="/"""+path+u"""cooking_fast_200.html">"""+nHearts+u"""</a></li>
-                 <li><a href="/"""+path+u"""cooking_karma_fast_200.html">"""+aHearts+u"""</a></li>
+                <li><a href="/crafting/"""+path+u"""cooking_fast_200.html">"""+nHearts+u"""</a></li>
+                 <li><a href="/crafting/"""+path+u"""cooking_karma_fast_200.html">"""+aHearts+u"""</a></li>
             </ul>
             </li>
             <li><a href="#">400-450</a>
             <ul>
-		    <li><a href="/"""+path+u"""artificing_450.html">"""+art+u"""</a></li>
-		    <li><a href="/"""+path+u"""huntsman_450.html">"""+hunt+u"""</a></li>
-		    <li><a href="/"""+path+u"""weaponcraft_450.html">"""+wc+u"""</a></li>
-		    <li><a href="/"""+path+u"""armorcraft_450.html">"""+ac+u"""</a></li>
-		    <li><a href="/"""+path+u"""leatherworking_450.html">"""+lw+u"""</a></li>
-		    <li><a href="/"""+path+u"""tailor_450.html">"""+tailor+u"""</a></li>
+		    <li><a href="/crafting/"""+path+u"""artificing_450.html">"""+art+u"""</a></li>
+		    <li><a href="/crafting/"""+path+u"""huntsman_450.html">"""+hunt+u"""</a></li>
+		    <li><a href="/crafting/"""+path+u"""weaponcraft_450.html">"""+wc+u"""</a></li>
+		    <li><a href="/crafting/"""+path+u"""armorcraft_450.html">"""+ac+u"""</a></li>
+		    <li><a href="/crafting/"""+path+u"""leatherworking_450.html">"""+lw+u"""</a></li>
+		    <li><a href="/crafting/"""+path+u"""tailor_450.html">"""+tailor+u"""</a></li>
             </ul>
             </li>
         </ul>
         </li>
-        <li><a href="/"""+path+u"""total.html">"""+totals+u"""</a></li>
-        <li><a href="/"""+path+u"""faq.html">"""+about+u"""</a></li>
+        <li><a href="/crafting/"""+path+u"""total.html">"""+totals+u"""</a></li>
+        <li><a href="/crafting/"""+path+u"""faq.html">"""+about+u"""</a></li>
         <li><a href="#" class="language" hreflang="en">"""+lang+u"""</a>
         <ul>
           <li><a href="/%s" hreflang="en">English</a></li>
